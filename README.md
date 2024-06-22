@@ -18,6 +18,7 @@ variable BasicLibrary: BasicLibrary:New(Title), BasicLibrary:UserNotify(String, 
 **Example Usage:**
 
 local BasicLibrary = loadstring(game:HttpGet('https://raw.githubusercontent.com/UserUnkown404/BasicLibrary/main/Library'))()
+
 local MainUI = BasicLibrary:New("MainUI")
 
 BasicLibrary:UserNotify("Successfully loaded!", 2)
@@ -29,6 +30,7 @@ variable MainUI: MainUI:NewTab(Name), MainUI:Exit()
 **Example Usage:**
 
 local BasicLibrary = loadstring(game:HttpGet('https://raw.githubusercontent.com/UserUnkown404/BasicLibrary/main/Library'))()
+
 local MainUI = BasicLibrary:New("MainUI")
 
 local Tab1 = MainUI:NewTab("1")
@@ -57,11 +59,13 @@ NewTextBox:SetText(String), NewTextBox:GetText(): TextBox's Text
 **Example Usage**
 
 local BasicLibrary = loadstring(game:HttpGet('https://raw.githubusercontent.com/UserUnkown404/BasicLibrary/main/Library'))()
+
 local MainUI = BasicLibrary:New("MainUI")
 
 local Tab1 = MainUI:NewTab("1")
 
 Tab1:NewTitle("1")
+
 Tab1:NewText("Library UI")
 
 Tab1:NewButton("Exit",function()
@@ -69,19 +73,27 @@ Tab1:NewButton("Exit",function()
 end)
 
 local Slider = Tab1:NewSlider("Wisdom of the Slider", -100, 100, 0)
+
 local Toggle = Tab1:NewSlider("Toggle your mo-")
+
 local ShoppingList = Tab1:NewDropDown({workspace, 123, "how about I go down your on mothe-", game:GetService("Players").LocalPlayer}, 123)
+
 local Keybind = Tab1:NewKeyBind("+25 cents to charity", "E")
+
 local YapYaYappityYapYappityYap = Tab1:NewTextBox("Holy yapping of the yappingtons", "Yapping")
 
 Slider:setSliderValue(200)
 
 NewToggle:setBoolValue(true)
+
 print(NewToggle:getBoolValue())
 
 NewDropDown:setNewValue(12873213498217391)
+
 NewDropDown:removeValue(123)
+
 NewDropDown:selectValue(workspace)
+
 print(NewDropDown:getValue())
 
 NewKeyBind:NewCallBegan(function()
@@ -95,6 +107,7 @@ end, true)
 print(NewKeyBind:getKeyBind())
 
 NewTextBox:SetText("too much yapping")
+
 print(NewTextBox:GetText())
 
 BasicLibrary:UserNotify("Successfully loaded!", 2)
