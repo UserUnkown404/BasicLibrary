@@ -12,18 +12,22 @@ local BasicLibrary = loadstring(game:HttpGet('https://raw.githubusercontent.com/
 
 # Functions Returned
 **Basic Library Variable**
+
 variable BasicLibrary: BasicLibrary:New(Title), BasicLibrary:UserNotify(String, Duration)
 
 **Example Usage:**
+
 local BasicLibrary = loadstring(game:HttpGet('https://raw.githubusercontent.com/UserUnkown404/BasicLibrary/main/Library'))()
 local MainUI = BasicLibrary:New("MainUI")
 
 BasicLibrary:UserNotify("Successfully loaded!", 2)
 
 **MainUI Variable**
+
 variable MainUI: MainUI:NewTab(Name), MainUI:Exit()
 
 **Example Usage:**
+
 local BasicLibrary = loadstring(game:HttpGet('https://raw.githubusercontent.com/UserUnkown404/BasicLibrary/main/Library'))()
 local MainUI = BasicLibrary:New("MainUI")
 
@@ -35,9 +39,11 @@ task.wait(2)
 MainUI:Exit()
 
 **Tab1 Variable**
+
 variable Tab1: Tab1:NewTitle(String), Tab1:NewButton(String,Call), Tab1:NewText(String), Tab1:NewSlider(String, Min, Max, SetValue), Tab1:NewToggle(String), Tab1:NewDropDown(TableList, SelectValue), Tab1:NewKeyBind(String, SetKeybind), Tab1:NewTextBox(String, SetText)
 
 **returned functions:**
+
 NewSlider:setSliderValue(Value)
 
 NewToggle:setBoolValue(Bool), NewToggle:getBoolValue(): bool
@@ -49,6 +55,7 @@ NewKeyBind:NewCallBegan(Call_, gameProcessedChecker), NewKeyBind:NewCallEnded(Ca
 NewTextBox:SetText(String), NewTextBox:GetText(): TextBox's Text
 
 **Example Usage**
+
 local BasicLibrary = loadstring(game:HttpGet('https://raw.githubusercontent.com/UserUnkown404/BasicLibrary/main/Library'))()
 local MainUI = BasicLibrary:New("MainUI")
 
